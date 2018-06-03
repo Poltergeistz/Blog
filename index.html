@@ -12,46 +12,56 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
                 <img src="img/if_news_283047.png" alt="Mon Blog"> Mon blog
             </a>
         </div>
         <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item is-active" href="index.html">
-                            Accueil
+            <div class="navbar-end">
+                <a class="navbar-item is-active" href="index.html">
+                    Accueil
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        Compte
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            Tableau de bord
                         </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link" href="#">
-                                Compte
-                            </a>
-                        <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            Profil
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Parametres
+                        </a>
+                        <hr class="navbar-divider">
+                        <div class="navbar-item">
                             <a class="navbar-item" href="#">
-                                    Tableau de bord
-                                </a>
-                            <a class="navbar-item" href="#">
-                                    Profil
-                                </a>
-                            <a class="navbar-item" href="#">
-                                    Parametres
-                                </a>
-                            <hr class="navbar-divider">
-                            <div class="navbar-item">
-                                    <a class="navbar-item" href="#">
                                 Se déconnecter</a>
-                            </div>
                         </div>
                     </div>
-                    <div class="navbar-item">
-                        <a class="button is-success" value="Se connecter" href="login.html">Se connecter</a>
-                    </div>
-                    <div class="navbar-item">
-                        <a class="button is-link" value="S'inscrire" href="inscription.html">S'inscrire</a>
-                    </div>
                 </div>
+                <div class="navbar-item">
+                    <a class="button is-success" value="Se connecter" href="login.html">Se connecter</a>
+                </div>
+                <div class="navbar-item">
+                    <a class="button is-link" value="S'inscrire" href="inscription.html">S'inscrire</a>
+                </div>
+                <!-- <div class="navbar-item">                    
+                        <div class="field has-addons">
+                        <div class="control is-expanded">
+                            <input class="input has-text-centered" type="search" placeholder="» » » » » » article « « « « « «">
+                        </div>
+                        <div class="control">
+                            <a class="button is-info">Rechercher</a>
+                        </div>
+                    </div>
+                    </div> -->
             </div>
+        </div>
         </div>
 
         <!-- BURGER NAV-->
@@ -63,6 +73,20 @@
         </div>
     </nav>
 
+    <!-- HERO -->
+    <section class="hero is-white is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Full Height title
+                </h1>
+                <h2 class="subtitle">
+                    Full Height subtitle
+                </h2>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
         <div id="flow">
             <span class="flow-1"></span>
@@ -71,16 +95,9 @@
         </div>
         <div class="section">
             <div class="box">
-                <div class="field has-addons">
-                    <div class="control is-expanded">
-                        <input class="input has-text-centered" type="search" placeholder="» » » » » » article « « « « « «">
-                    </div>
-                    <div class="control">
-                        <a class="button is-info">Rechercher</a>
-                    </div>
-                </div>
+                <p>Tous les derniers articles...</p>
             </div>
-            <!-- Developers -->
+            <!-- POSTS -->
             <div class="row columns">
                 <div class="column is-one-third">
                     <div class="card large">
@@ -106,10 +123,13 @@
                                     <p class="subtitle is-6">Moderateur</p>
                                 </div>
                             </div>
+                            <hr>
                             <div class="content">
+                                <h2 class="subtitle">Title</h2>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic
                                 beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit
                                 beatae magnam animi!
+                                <p><a>Lire la suite...</a></p>
                             </div>
                         </div>
                     </div>
@@ -138,10 +158,13 @@
                                     <p class="subtitle is-6">Admin</p>
                                 </div>
                             </div>
+                            <hr>
                             <div class="content">
+                                <h2 class="subtitle">Title</h2>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic
                                 beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit
                                 beatae magnam animi!
+                                <p><a>Lire la suite...</a></p>
                             </div>
                         </div>
                     </div>
@@ -170,10 +193,13 @@
                                     <p class="subtitle is-6">Voyageur</p>
                                 </div>
                             </div>
+                            <hr>
                             <div class="content">
+                                <h2 class="subtitle">Title</h2>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic
                                 beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit
                                 beatae magnam animi!
+                                <p><a>Lire la suite...</a></p>
                             </div>
                         </div>
                     </div>
@@ -182,7 +208,6 @@
         </div>
     </div>
     </div>
-    <!-- End Staff -->
     </div>
     </div>
     <!-- HERO -->
@@ -227,8 +252,8 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <p>Photo by David Journo &#169;</p>
-                <p>
+                <p class="footer-text">Photos by David Journo &#169;</p>
+                <p class="footer-text">
                     <strong>Bulma</strong> by
                     <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
                     <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
