@@ -9,6 +9,30 @@ body{
     background-position: bottom;
 }
 
+/* section */
+
+section{
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card{
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+}
+
+.footer-text{
+    color: gray;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
 /* background */
 
 #background{
@@ -20,7 +44,10 @@ body{
     
 }
 
-/* login box */
+/* inscription.html */ 
+
+
+/* login box login.html */
 
 .login{
     width: 320px;
@@ -34,9 +61,19 @@ body{
     box-sizing: border-box;
     padding: 70px 30px
 }
+
 fieldset{
+    /* background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px; */
     border: none;
     margin: 5px;
+    width: 340px;
+    height: auto;
 }
 
 /* Avatar */
