@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestion utilisateurs
+    </title>
+</head>
+
+<body>
+    <!-- Formulaire d'inscription -->
+    <fieldset alt="formulaire" id="form">
+        <!-- Nom -->
+        <fieldset alt="nom">
+            <div class="field">
+                <label class="label">Nom</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Nom">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Prenom -->
+        <fieldset alt="prenom">
+            <div class="field">
+                <label class="label">Prénom</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Prénom">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Pseudo -->
+        <fieldset alt="pseudo">
+            <div class="field">
+                <label class="label">Utilisateur</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="text" placeholder="Pseudo">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user-secret"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+                <p class="help is-success">Ce nom d'utilisateur est disponnible !</p>
+            </div>
+        </fieldset>
+
+        <!-- Email -->
+        <fieldset alt="email">
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-danger" type="email" placeholder="Exemple@exemple.com">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                </div>
+                <p class="help is-danger">Cet email est invalide !</p>
+            </div>
+        </fieldset>
+
+        <!-- Gender -->
+        <fieldset alt="gender">
+            <div class="field">
+                <label class="label">Gender</label>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="question"> Homme
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="question"> Femme
+                    </label>
+                    <label class="radio">
+                            <input type="radio" name="question"> Autre
+                        </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Date de naissance -->
+        <fieldset alt="naissance">
+            <div class="field">
+                <label class="label">Date de Naissance</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="date">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-calendar-alt"></i>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Mot de Passe -->
+        <fieldset alt="mot-de-passe">
+            <div class="field">
+                <label class="label">Mot de Passe</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="password" placeholder="8 charactères min.">
+                    <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    <p class="help is-warning">8 caractères, 1 majuscule, 1 caractère spécial &amp; 1 chiffre !</p>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Ville -->
+        <fieldset alt="ville">
+            <div class="field">
+                <label class="label">Ville</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Ma ville">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-map-signs"></i>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Hobbies -->
+        <fieldset alt="hobby">
+            <div class="field">
+                <label class="label">Hobbies</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="200 charactères max."></textarea>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Telephone -->
+        <fieldset alt="telephone">
+            <div class="field">
+                <label class="label">Telephone</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="tel" placeholder="Exemple : +33 00 00 00 00">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Site Internet -->
+        <fieldset alt="site-internet">
+            <div class="field">
+                <label class="label">Site web</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Monbeausite.com">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-at"></i>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Couleur -->
+        <fieldset alt="couleur">
+            <div class="field">
+                <label class="label">Ma couleur favorite</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="color">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-paint-brush"></i>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Boutons-->
+        <br>
+        <fieldset alt="boutons">
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Valider</button>
+                </div>
+                <div class="control">
+                    <button class="button is-text" href="index.html">Annuler</button>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</body>
+
+</html>
